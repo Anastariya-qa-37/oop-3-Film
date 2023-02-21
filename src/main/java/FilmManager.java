@@ -47,18 +47,5 @@ public class FilmManager {
         return tmp;
     }
 
-    public FilmItem[] findFirst() {
-        int firstInd =  limit;
-        if (firstInd > items.length) {
-            firstInd = items.length;
-        }
-        for (int i = 0; i < firstInd; i++) {
-           // System.out.println(items[i]);
-
-        }
-        return new FilmItem[0];
-    }
-
-
 }
 

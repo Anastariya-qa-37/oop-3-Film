@@ -34,15 +34,6 @@ public class Main {
         //filmManager.findLast();
        // System.out.println("");
 
-        filmManager.findFirst();
-
-        FilmRepisitory rep = new FilmRepisitory();
-        rep.save(filmItem);
-        rep.save(filmItem3);
-        rep.save(filmItem5);
-
-        rep.removeById(1);
-        rep.findById(2);
 
     }
 
