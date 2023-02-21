@@ -6,7 +6,7 @@ import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FilmTest {
+public class FilmManagerTest {
     FilmRepisitory repo = Mockito.mock(FilmRepisitory.class);
     FilmItem filmItem = new FilmItem(1, "dexter", "eeee");
     FilmItem filmItem2 = new FilmItem(2, "Eolla", "eeee");
