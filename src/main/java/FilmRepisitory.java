@@ -40,7 +40,7 @@ public class FilmRepisitory {
     }
     //        removeAll -полностью вычищает репозиторий, для удаления всех элементов достаточно в поле items положить пустой массив.
 
-    public void  removeAll() {
+    public void removeAll() {
         items = new FilmItem[0];
     }
 

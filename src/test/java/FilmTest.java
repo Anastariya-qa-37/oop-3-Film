@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+
 import static org.mockito.Mockito.*;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -22,7 +23,7 @@ public class FilmTest {
 
     @Test
     void save() {
-       FilmManager filmManager = new FilmManager(repo,11);
+        FilmManager filmManager = new FilmManager(repo, 11);
 
 
 // подготавливаем данные:
@@ -38,7 +39,7 @@ public class FilmTest {
 
     @Test
     void findAll() {
-        FilmManager filmManager = new FilmManager(repo,11);
+        FilmManager filmManager = new FilmManager(repo, 11);
 
         FilmItem[] expected = {filmItem, filmItem2, filmItem3, filmItem4, filmItem5,
                 filmItem6, filmItem7, filmItem8, filmItem9, filmItem10, filmItem11};
@@ -58,7 +59,7 @@ public class FilmTest {
 
     @Test
     void findLast() {
-        FilmManager filmManager = new FilmManager(repo,4);
+        FilmManager filmManager = new FilmManager(repo, 4);
 
         FilmItem[] items = {filmItem, filmItem2, filmItem3, filmItem4, filmItem5,
                 filmItem6, filmItem7, filmItem8, filmItem9, filmItem10, filmItem11};

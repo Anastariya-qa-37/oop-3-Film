@@ -22,7 +22,7 @@ public class FilmRepositoryTest {
     FilmItem filmItem11 = new FilmItem(11, "Garfild", "eeee");
 
     @BeforeEach
-    void setup(){
+    void setup() {
         repo.removeAll();
         repo.save(filmItem);
     }
@@ -31,7 +31,7 @@ public class FilmRepositoryTest {
     @Test
     void save() {
         repo.save(filmItem2);
-        FilmItem[] expected = {filmItem,filmItem2};
+        FilmItem[] expected = {filmItem, filmItem2};
 
 
         // вызываем целевой метод:
@@ -68,7 +68,7 @@ public class FilmRepositoryTest {
     }
 
     @Test
-    void  removeById() {
+    void removeById() {
         FilmItem[] expected = {null};
 
         // вызываем целевой метод:
@@ -79,11 +79,11 @@ public class FilmRepositoryTest {
     }
 
     @Test
-    void  removeAll() {
+    void removeAll() {
         FilmItem[] expected = {};
 
         // вызываем целевой метод:
-         repo.removeAll();
+        repo.removeAll();
         FilmItem[] actual = repo.findAll();
         assertArrayEquals(expected, actual);
     }

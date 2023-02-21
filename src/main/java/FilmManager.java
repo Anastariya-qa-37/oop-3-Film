@@ -24,7 +24,7 @@ public class FilmManager {
     }
 
     public FilmItem[] findLast() {
-        int lastInd =  repo.findAll().length-limit;
+        int lastInd = repo.findAll().length - limit;
         if (lastInd < 0) {
             lastInd = 0;
         }
@@ -32,23 +32,11 @@ public class FilmManager {
         int g = 0;
         for (int i = repo.findAll().length - 1; i >= lastInd; i--) {
             //System.out.println(items[i]);
-            tmp[g]= repo.findAll()[i];
+            tmp[g] = repo.findAll()[i];
             g++;
         }
         return tmp;
     }
-
-    //public FilmItem[] findFirst() {
-        //int firstInd =  limit;
-        //if (firstInd > items.length) {
-         //   firstInd = items.length;
-       // }
-        //for (int i = 0; i < firstInd; i++) {
-           // System.out.println(items[i]);
-
-       // }
-        //return new FilmItem[0];
-    //}
 
 
 }

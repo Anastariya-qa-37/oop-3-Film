@@ -1,6 +1,6 @@
 public class Main {
 
-    public  static void main (String[] args){
+    public static void main(String[] args) {
         FilmRepisitory repisitory = new FilmRepisitory();
 
 
@@ -27,14 +27,14 @@ public class Main {
         FilmItem filmItem11 = new FilmItem(11, "Garfild", "eeee");
         repisitory.save(filmItem11);
 
-        FilmManager filmManager = new FilmManager(repisitory,5);
+        FilmManager filmManager = new FilmManager(repisitory, 5);
 
 
         //filmManager.findAll();
         System.out.println("");
 
         //filmManager.findLast();
-       // System.out.println("");
+        // System.out.println("");
 
 //        filmManager.findFirst();
 
@@ -47,8 +47,6 @@ public class Main {
         rep.findById(2);
 
     }
-
-
 
 
 }
